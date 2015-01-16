@@ -25,6 +25,7 @@ Ext.application({
 
     requires: [
         'Ext.MessageBox',
+        'storage.LocalStorage',
         'storage.WebSQL'
     ],
 

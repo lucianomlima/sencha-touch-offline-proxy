@@ -11,9 +11,9 @@ Ext.define('Offline.store.Buttons', {
         model: 'Offline.model.Button',
         proxy: {
             type: 'offline',
-            url: '/test-api/test-resource.json',
+            url: 'test-api/test-resource.json',
             storageKey: 'buttons',
-            storageFacility: storage.WebSQL,
+            storageFacility: storage.LocalStorage,
             reader: {
                 type: 'json',
                 rootProperty: 'data'
